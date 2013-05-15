@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<map>
+  <room>
+    <name>Entrance</name>
+    <description>You find yourself at the mouth of a cave and decide that in spite of common sense and any sense of self preservation that you're going to go exploring north into it.  It's a little dark, but luckily there are some torches on the wall.</description>
+    <container>chest</container>
+    <item>torch</item>
+    <trigger>
+      <type>permanent</type>
+      <command>n</command>
+      <condition>
+        <has>no</has>
+        <object>torch</object>
+        <owner>inventory</owner>
+      </condition>
+      <print>*stumble* need some light...</print>
+    </trigger>
+    <border>
+      <direction>north</direction>
+      <name>MainCavern</name>
+    </border>
+  </room>
+  <item>
+    <name>torch</name>
+    <writing>next to a small button it reads "push for big flame"</writing>
+    <status>lit</status>
+    <turnon>
+      <print>the torch has erupted into a menacing inferno</print>
+      <action>Update torch to inferno</action>
+    </turnon>
+  </item>
+  <container>
+    <name>chest</name>
+    <item>explosive</item>
+  </container>
+</map>

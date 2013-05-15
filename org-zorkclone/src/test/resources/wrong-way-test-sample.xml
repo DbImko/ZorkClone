@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<map>
+  <room>
+    <name>Entrance</name>
+    <description>Entrance</description>
+    <item>torch</item>
+    <trigger>
+      <type>permanent</type>
+      <command>n</command>
+      <condition>
+        <has>no</has>
+        <object>torch</object>
+        <owner>inventory</owner>
+      </condition>
+      <print>*stumble* need some light...</print>
+    </trigger>
+    <border>
+      <direction>north</direction>
+      <name>MainCavern</name>
+    </border>
+  </room>
+  <room>
+    <name>MainCavern</name>
+    <description>MainCavern</description>
+    <container>chest</container>
+    <container>lock</container>
+    <creature>gnome</creature>
+    <border>
+      <direction>south</direction>
+      <name>Entrance</name>
+    </border>
+    <border>
+      <direction>north</direction>
+      <name>Staircase</name>
+    </border>
+    <trigger>
+      <command>n</command>
+      <type>permanent</type>
+      <condition>
+        <object>lock</object>
+        <status>locked</status>
+      </condition>
+    </trigger>
+  </room>
+</map>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<map>
+	<room>
+		<name>Entrance</name>
+		<description>Entrance</description>
+		<container>lock</container>
+	</room>
+
+	<container>
+		<name>lock</name>
+		<status>locked</status>
+	</container>
+	<item>
+	    <name>torch</name>
+	</item>
+</map>
