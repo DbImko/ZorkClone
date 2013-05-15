@@ -22,8 +22,10 @@ added to (container)."
 
 Build and run
 =============
-Build `mvn install`
-Run `java -jar org-zorkclone-0.0.1-SNAPSHOT-jar-with-dependencies.jar`
-Run tests `mvn test`
+To build `mvn install`.
+
+To run `java -jar org-zorkclone-0.0.1-SNAPSHOT-jar-with-dependencies.jar`.
+
+To run tests `mvn test`.
 
 You will need Java 7 and Maven to build and run this application.
